@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Meditation App - Heidy Rodriguez</title>
+</head>
+<body>
+    <div class="app">
+
+        <!-- default video -->
+        <div class="vid-container">
+            <!-- loop makes it continously loop  -->
+            <video loop>
+                <source src="video/vecteezy_rain-falling-on-an-old-roof_2019278.mp4" type="video/mp4" />
+                <!-- <a href="https://www.vecteezy.com/free-videos/rain-roof">Rain Roof Stock Videos by Vecteezy</a> -->
+            </video>
+        </div>
+
+
+        <!-- number of minutes -->
+        <div class="time-select">
+            <button data-time="300">5 Minutes</button>
+            <button data-time="600">10 Minutes</button>
+            <button data-time="900">15 Minutes</button>
+        </div>
+
+        <!-- play button -->
+        <div class="play-container">
+            <audio class="song">
+                <source src="./sounds/39103_rain.mp3">
+            </audio>
+            <img src="./svg/play.svg" alt="play button" class="play">
+            <svg 
+            class="track-outline"
+                width="453" 
+                height="453" 
+                viewBox="0 0 453 453" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+
+                <circle 
+                cx="226.5" 
+                cy="226.5" 
+                r="216.5" 
+                stroke="white" 
+                stroke-width="20"/>
+                </svg>
+            <svg 
+             class="moving-outline"
+                width="453" 
+                height="453" 
+                viewBox="0 0 453 453" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+                    
+                <circle 
+                cx="226.5" 
+                cy="226.5" 
+                r="216.5" 
+                stroke="#018EBA" 
+                stroke-width="20"/>
+                    </svg>
+                    <h3 class="time-display">0:00</h3>
+         </div>
+
+        <!-- different sounds -->
+        <div class="sound-picker">
+            <button data-sound="./sounds/39103_rain.mp3" data-video="./video/vecteezy_rain-falling-on-an-old-roof_2019278.mp4"><img src="./svg/rain.svg" alt="rain"></button>
+            <button data-sound="./sounds/63355_beach.mp3" data-video="./video/vecteezy_beautiful-sunset-at-tropical-beach_3549954.mp4"><img src="./svg/beach.svg" alt="beach"></button>
+            <!-- <a href="https://www.vecteezy.com/free-videos/beach">Beach Stock Videos by Vecteezy</a> -->
+            <button data-sound="./sounds/84295_birds-singing-calm-river-nature-ambient-sound-127411.mp3" data-video="./video/vecteezy_landscape-with-river-and-stones-during-sunset_3136260.mp4"><img src="./svg/river-svgrepo-com.svg" alt="river"></button>
+            <!-- <a href="https://www.vecteezy.com/free-videos/river">River Stock Videos by Vecteezy</a> -->
+            <button data-sound="./sounds/30728_ticking-clock_1-27477.mp3" data-video="./video/vecteezy_primer-plano-del-reloj-analogico_2294932.mp4"><img src="./svg/clock-eight-svgrepo-com.svg" alt="clock"></button>
+        </div>
+
+    </div>
+    
+    
+    
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
