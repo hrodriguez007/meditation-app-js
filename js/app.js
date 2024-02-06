@@ -17,7 +17,7 @@ const app = () => {
     const outlineLength = outline.getTotalLength();
 
     //duration of time of each button (5, 15, 30 minutes) as time goes
-    let fakeDuration = 1800;
+    let fakeDuration = 900;
 
         outline.style.strokeDasharray = outlineLength;
         outline.style.strokeDashoffset = outlineLength; 
